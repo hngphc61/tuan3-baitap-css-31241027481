@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Hồng Phúc | Bài tập CSS Tuần 3</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { margin: 0; font-family: Arial, sans-serif; color: #243746; background: #f2f6f6; }
+        a { color: #006b73; }
+        a:focus-visible { outline: 3px solid #e69b00; outline-offset: 5px; }
+        .page { max-width: 1080px; margin: 48px auto; padding: 0 24px; }
+        .profile { display: flex; align-items: center; gap: 36px; padding: 40px; border-radius: 18px; color: white; background: #005b62; }
+        .avatar { flex-shrink: 0; width: 180px; height: 180px; border: 5px solid #ffffff80; border-radius: 50%; object-fit: cover; object-position: center; }
+        .eyebrow { margin: 0 0 12px; font-size: 13px; font-weight: bold; letter-spacing: 2px; color: #b9e6e6; }
+        h1 { margin: 0 0 12px; font-size: 36px; line-height: 1.2; }
+        .profile p { line-height: 1.6; }
+        .profile .details { margin: 0 0 20px; color: #e0f1f1; }
+        .social { display: flex; flex-wrap: wrap; gap: 10px; }
+        .social a { padding: 10px 16px; border: 1px solid #ffffff70; border-radius: 6px; color: white; text-decoration: none; }
+        .social a:hover { background: #ffffff20; }
+        .section-heading { margin: 38px 0 8px; font-size: 26px; }
+        .intro { margin: 0 0 24px; line-height: 1.6; color: #536773; }
+        .exercises { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; padding: 0; margin: 0; list-style: none; }
+        .exercises li { display: flex; }
+        .exercise { display: flex; flex-direction: column; width: 100%; padding: 24px; border: 1px solid #dae5e5; border-radius: 12px; background: white; text-decoration: none; transition: border-color .15s, box-shadow .15s; }
+        .exercise:hover { border-color: #00777d; box-shadow: 0 5px 16px #005b6212; }
+        .number { font-size: 13px; font-weight: bold; letter-spacing: 1px; color: #00777d; }
+        .exercise h3 { margin: 12px 0 10px; color: #243746; font-size: 19px; line-height: 1.35; }
+        .exercise p { flex: 1; margin: 0 0 20px; font-size: 14px; line-height: 1.6; color: #536773; }
+        .open { font-size: 14px; font-weight: bold; }
+        footer { padding: 28px 0 0; font-size: 13px; line-height: 1.6; color: #536773; text-align: center; }
+        @media (max-width: 800px) { .exercises { grid-template-columns: repeat(2, minmax(0, 1fr)); } .profile { gap: 24px; padding: 28px; } .avatar { width: 140px; height: 140px; } h1 { font-size: 30px; } }
+        @media (max-width: 540px) { .page { margin: 24px auto; padding: 0 16px; } .profile { flex-direction: column; text-align: center; } .social { justify-content: center; } .exercises { grid-template-columns: 1fr; } h1 { font-size: 28px; } }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <header class="profile">
+            <img class="avatar" src="anhprofile.jpg" width="180" height="180" alt="Ảnh đại diện Nguyễn Hồng Phúc">
+            <div>
+                <p class="eyebrow">UEH · BÀI TẬP TUẦN 3</p>
+                <h1>Nguyễn Hồng Phúc</h1>
+                <p class="details">MSSV: 31241027481<br>Môn học: Phát triển ứng dụng TMĐT</p>
+                <nav class="social" aria-label="Liên kết cá nhân">
+                    <a href="https://www.facebook.com/hong.phuc.719815" target="_blank" rel="noopener noreferrer">Facebook ↗</a>
+                    <a href="https://github.com/hngphc61" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <h2 class="section-heading">Bài tập CSS cơ bản</h2>
+            <p class="intro">Tổng hợp các bài thực hành Tuần 3. Ở bài 3, mình chọn hoàn thành bài 4, 5, 6, 7; ở bài 8, mình chọn phương án a.</p>
+            <ul class="exercises">
+                <li><a class="exercise" href="Bai1.html"><span class="number">BÀI 01</span><h3>Game CSS</h3><p>Minh chứng hoàn thành CSS Diner và CSS Speedrun.</p><span class="open">Xem bài làm →</span></a></li>
+                <li><a class="exercise" href="Bai2.html"><span class="number">BÀI 02</span><h3>Định dạng CSS cơ bản</h3><p>Định dạng chữ, hiệu ứng bóng chữ, hình nền và xử lý nội dung tràn.</p><span class="open">Xem bài làm →</span></a></li>
+                <li><a class="exercise" href="Bai4.html"><span class="number">BÀI 04</span><h3>Menu ngang</h3><p>Sắp xếp các liên kết TMDT, ERP, MIS và DS thành menu ngang.</p><span class="open">Xem bài làm →</span></a></li>
+                <li><a class="exercise" href="Bai5.html"><span class="number">BÀI 05</span><h3>Shared Hosting</h3><p>Định dạng phần giới thiệu dịch vụ với logo, tiêu đề và các nút liên kết.</p><span class="open">Xem bài làm →</span></a></li>
+                <li><a class="exercise" href="Bai6.html"><span class="number">BÀI 06</span><h3>My Portfolio</h3><p>Trình bày danh mục portfolio và bộ sưu tập ảnh theo bố cục lưới.</p><span class="open">Xem bài làm →</span></a></li>
+                <li><a class="exercise" href="Bai7.html"><span class="number">BÀI 07</span><h3>Bố cục trang web</h3><p>Sắp xếp header, nav, main và footer trong khung wrapper.</p><span class="open">Xem bài làm →</span></a></li>
+                <li><a class="exercise" href="Bai8.html"><span class="number">BÀI 08 · PHƯƠNG ÁN A</span><h3>Heroes of JavaScript and HTML</h3><p>Định dạng bốn nhân vật với phần mô tả chồng lên hình ảnh.</p><span class="open">Xem bài làm →</span></a></li>
+                <li><a class="exercise" href="Bai9.html"><span class="number">BÀI 09</span><h3>Font Awesome</h3><p>Sử dụng icon cho thông tin cá nhân, học tập và các liên kết.</p><span class="open">Xem bài làm →</span></a></li>
+            </ul>
+        </main>
+        <footer>Nguyễn Hồng Phúc · 31241027481 · Tuần 3<br><a href="https://github.com/hngphc61/tuan3-baitap-css-31241027481" target="_blank" rel="noopener noreferrer">Repository bài tập trên GitHub</a></footer>
+    </div>
+</body>
+</html>

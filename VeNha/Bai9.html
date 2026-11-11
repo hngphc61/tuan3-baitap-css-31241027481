@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 9 - Font Awesome</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        * { box-sizing: border-box; }
+        body { margin: 0; padding: 40px 16px; font-family: Arial, sans-serif; color: #243746; background: #edf4f4; }
+        main { max-width: 900px; margin: auto; padding: 32px; border-radius: 12px; background: white; }
+        h1 { margin: 0 0 12px; font-size: 28px; }
+        h1 i { color: #00777d; margin-right: 8px; }
+        .intro { margin-bottom: 28px; line-height: 1.6; color: #526574; }
+        .icon-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin: 0; padding: 0; list-style: none; }
+        .icon-list li { padding: 24px 12px; border: 1px solid #d6e5e5; border-radius: 8px; text-align: center; background: #f5fafa; }
+        .icon-list i { display: block; margin-bottom: 14px; font-size: 34px; color: #00777d; }
+        h2 { margin: 32px 0 16px; font-size: 20px; }
+        .links { display: flex; flex-wrap: wrap; gap: 12px; }
+        .links a { display: inline-block; padding: 12px 18px; border-radius: 6px; background: #006b73; color: white; text-decoration: none; }
+        .links i { margin-right: 8px; }
+        .links a:hover { background: #004e54; }
+        a:focus-visible { outline: 3px solid #e69b00; outline-offset: 4px; }
+        .note { margin: 24px 0 0; font-size: 14px; line-height: 1.6; color: #526574; }
+        @media (max-width: 600px) { main { padding: 24px 18px; } .icon-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } h1 { font-size: 24px; } }
+    </style>
+</head>
+<body>
+    <main>
+        <h1><i class="fa-solid fa-icons" aria-hidden="true"></i>Bài 9: Sử dụng Font Awesome</h1>
+        <p class="intro">Một số biểu tượng dùng cho trang giới thiệu cá nhân và bài tập môn Phát triển ứng dụng TMĐT.</p>
+        <ul class="icon-list">
+            <li><i class="fa-solid fa-user" aria-hidden="true"></i>Thông tin cá nhân</li>
+            <li><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>Học tập</li>
+            <li><i class="fa-solid fa-laptop-code" aria-hidden="true"></i>Lập trình Web</li>
+            <li><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>Thương mại điện tử</li>
+            <li><i class="fa-solid fa-book-open" aria-hidden="true"></i>Bài tập</li>
+            <li><i class="fa-solid fa-envelope" aria-hidden="true"></i>Liên hệ</li>
+        </ul>
+        <h2>Liên kết có biểu tượng</h2>
+        <div class="links">
+            <a href="https://github.com/hngphc61" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub cá nhân</a>
+            <a href="https://github.com/hngphc61/tuan3-baitap-css-31241027481" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-folder-open" aria-hidden="true"></i>Repository bài tập</a>
+            <a href="Bai8.html"><i class="fa-solid fa-code" aria-hidden="true"></i>Xem bài 8</a>
+        </div>
+    </main>
+</body>
+</html>

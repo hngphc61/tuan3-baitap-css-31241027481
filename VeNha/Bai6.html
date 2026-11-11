@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 6 - My Portfolio</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { margin: 0; font-family: Arial, sans-serif; color: #333; }
+        .portfolio { max-width: 1130px; margin: 40px auto; padding: 30px 20px; background: #f8f8f8; text-align: center; }
+        h2 { margin: 0 0 24px; font-size: 28px; }
+        h2::after { content: ""; display: block; width: 70px; height: 3px; margin: 14px auto 0; background: #53c4c7; }
+        ul { margin: 0; padding: 0; list-style: none; }
+        .list-tab { margin-bottom: 34px; }
+        .list-tab li { display: inline-block; margin: 6px 10px; }
+        .list-tab a { color: #444; text-decoration: none; font-size: 14px; font-weight: bold; }
+        .list-tab .active, .list-tab a:hover { color: #44b6b9; }
+        .galerry { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+        .galerry a { display: block; }
+        .galerry img { display: block; width: 100%; height: auto; }
+        a:focus-visible { outline: 3px solid #006b73; outline-offset: 4px; }
+        @media (max-width: 700px) { .galerry { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+        @media (max-width: 420px) { .galerry { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <section class="portfolio">
+        <h2>MY PORTFOLIO</h2>
+        <ul class="list-tab">
+            <li><a class="active" href="./">All</a></li>
+            <li><a href="./">Web App</a></li>
+            <li><a href="./">UI/UX</a></li>
+            <li><a href="./">Graphics Design</a></li>
+            <li><a href="./">Mobile App</a></li>
+            <li><a href="./">Branding</a></li>
+            <li><a href="./">Marketing</a></li>
+        </ul>
+        <ul class="galerry">
+            <li><a href="./"><img src="img_350x260.png" width="350" height="260" alt="Portfolio project 1"></a></li>
+            <li><a href="./"><img src="img_350x260.png" width="350" height="260" alt="Portfolio project 2"></a></li>
+            <li><a href="./"><img src="img_350x260.png" width="350" height="260" alt="Portfolio project 3"></a></li>
+            <li><a href="./"><img src="img_350x260.png" width="350" height="260" alt="Portfolio project 4"></a></li>
+            <li><a href="./"><img src="img_350x260.png" width="350" height="260" alt="Portfolio project 5"></a></li>
+            <li><a href="./"><img src="img_350x260.png" width="350" height="260" alt="Portfolio project 6"></a></li>
+            <li><a href="./"><img src="img_350x260.png" width="350" height="260" alt="Portfolio project 7"></a></li>
+            <li><a href="./"><img src="img_350x260.png" width="350" height="260" alt="Portfolio project 8"></a></li>
+            <li><a href="./"><img src="img_350x260.png" width="350" height="260" alt="Portfolio project 9"></a></li>
+        </ul>
+    </section>
+</body>
+</html>

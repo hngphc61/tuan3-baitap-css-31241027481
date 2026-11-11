@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 7 - Bố cục trang</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { margin: 40px 16px; font-family: Arial, sans-serif; font-size: 18px; }
+        #wrapper {
+            display: grid;
+            grid-template-columns: 70px minmax(0, 1fr);
+            grid-template-rows: 50px 330px 36px;
+            gap: 6px;
+            position: relative;
+            width: 320px;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 6px;
+            border: 3px double #333;
+            box-shadow: -14px 14px 12px #aaa;
+        }
+        #wrapper::before { content: "wrapper"; position: absolute; top: -28px; left: 4px; }
+        header, nav, main, footer { padding: 5px; border: 3px double #333; }
+        header { grid-column: 1 / -1; }
+        footer { grid-column: 1 / -1; }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>header</header>
+        <nav>nav</nav>
+        <main>main</main>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>
